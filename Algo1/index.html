@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    workshop algo test algo with js
+    <script>
+      const str = "Hello Algo Good Luck Haythem.";
+
+      function lower(str){
+          var low =str.toLowerCase();
+          return `lower word is: ${low}`;
+      }
+       console.log(lower(str));
+
+      function longStr(str){
+          var long = str.length;
+          return `length of string is: ${long}`;
+      }
+      console.log(longStr(str))
+
+      const CountVoy = str =>{
+         
+          var chars = str.split("");
+          console.log(chars)
+          const voy = /[a,e,i,o,u,y]/g;
+       //,A,E,I,O,U,Y
+          if(chars=str.match(voy)){
+              var res = str.toLowerCase().match(voy).length;
+              return `nuber of Voyelle is : ${res}`
+          }else{
+              return "pas de voyelle"
+          }
+ 
+      }
+      console.log(CountVoy(str))
+
+    </script>
+</body>
+</html>
